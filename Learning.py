@@ -33,3 +33,5 @@ df = pd.read_csv(CSV_PATH, nrows=5, index_col='id',usecols=['id','artist'])
 COLS_TO_USE = ['id','artist','title','medium','year','acquisitionYear','height','width','units']
 
 df = pd.read_csv(CSV_PATH, nrows=5, index_col='id',usecols=COLS_TO_USE)
+
+df.to_pickle(os.path.join("D:\Downloads\Programming\Python\Pandas Fundamental PluralSight\pandas-fundamentals\demos\collection-master",'data_frame.pickle'))
